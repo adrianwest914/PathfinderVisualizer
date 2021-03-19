@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfinderVisualizer", "PathfinderVisualizer\PathfinderVisualizer.csproj", "{526F5FAC-4431-4DC9-8EEB-701D3DD95AAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfinderVisualizer.WPF", "PathfinderVisualizer.WPF\PathfinderVisualizer.WPF.csproj", "{526F5FAC-4431-4DC9-8EEB-701D3DD95AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
