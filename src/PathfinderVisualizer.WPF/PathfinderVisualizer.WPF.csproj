@@ -94,5 +94,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AStarAlgorithm\AlgorithmThread\" />
+    <Folder Include="AStarAlgorithm\Helpers\DataStructures\" />
+    <Folder Include="AStarAlgorithm\Helpers\Enums\" />
+    <Folder Include="AStarAlgorithm\Helpers\EventArgs\" />
+    <Folder Include="AStarAlgorithm\Helpers\Objects\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Observers\" />
+    <Folder Include="Renderers\Helpers\" />
+    <Folder Include="StartupValues\" />
+    <Folder Include="UIControls\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
