@@ -55,6 +55,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AStarAlgorithm\AlgorithmThreadController.cs" />
+    <Compile Include="AStarAlgorithm\AlgorithmThread\AlgorithmContoller.cs" />
+    <Compile Include="AStarAlgorithm\AlgorithmThread\AStarAlgorithm.cs" />
+    <Compile Include="AStarAlgorithm\AStarValues.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\DataStructures\ClosedSet.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\DataStructures\OpenSet.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\Enums\State.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\Enums\Tile.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\EventArgs\NodeAdedToCollectionEventArgs.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\EventArgs\PathFoundEventArgs.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\Objects\AStarTile.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\Objects\Node.cs" />
+    <Compile Include="AStarVisualizer.cs" />
+    <Compile Include="Controllers\DelayController.cs" />
+    <Compile Include="Controllers\DimensionController.cs" />
+    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="Controllers\StateController.cs" />
+    <Compile Include="Controllers\TileController.cs" />
+    <Compile Include="Observers\DiagonalPathObserver.cs" />
+    <Compile Include="Observers\IObserver.cs" />
+    <Compile Include="Observers\StateObserver.cs" />
+    <Compile Include="Renderers\GridRenderer.cs" />
+    <Compile Include="Renderers\Helpers\RenderColors.cs" />
+    <Compile Include="Renderers\Helpers\TileRenderObject.cs" />
+    <Compile Include="Renderers\IRenderer.cs" />
+    <Compile Include="Renderers\PathRenderer.cs" />
+    <Compile Include="Renderers\TileRenderer.cs" />
+    <Compile Include="StartupValues\StatupValues.cs" />
+    <Compile Include="UIControls\ControlNames.cs" />
+    <Compile Include="UIControls\UIControl.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,17 +124,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="AStarAlgorithm\AlgorithmThread\" />
-    <Folder Include="AStarAlgorithm\Helpers\DataStructures\" />
-    <Folder Include="AStarAlgorithm\Helpers\Enums\" />
-    <Folder Include="AStarAlgorithm\Helpers\EventArgs\" />
-    <Folder Include="AStarAlgorithm\Helpers\Objects\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Observers\" />
-    <Folder Include="Renderers\Helpers\" />
-    <Folder Include="StartupValues\" />
-    <Folder Include="UIControls\" />
+    <ProjectReference Include="..\PathfinderVisualizer.Library\PathfinderVisualizer.Library.csproj">
+      <Project>{c9385a0f-5e75-4db7-8651-710256f146a6}</Project>
+      <Name>PathfinderVisualizer.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
