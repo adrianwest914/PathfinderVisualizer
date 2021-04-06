@@ -43,7 +43,7 @@ namespace PathfinderVisualizer.Library.DataStructures
             T item = Items[0];
             Items[0] = Items[_Count - 1];
             _Count--;
-            Heapifyown();
+            HeapifyDown();
 
             return item;
         }
