@@ -2,6 +2,7 @@
 {
     public interface IObserver
     {
-
+        void StartObserving();
+        void StopObserving();
     }
 }

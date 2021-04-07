@@ -82,7 +82,7 @@
     <Compile Include="Renderers\IRenderer.cs" />
     <Compile Include="Renderers\PathRenderer.cs" />
     <Compile Include="Renderers\TileRenderer.cs" />
-    <Compile Include="StartupValues\StatupValues.cs" />
+    <Compile Include="StartupValues\StartupValues.cs" />
     <Compile Include="UIControls\ControlNames.cs" />
     <Compile Include="UIControls\UIControl.cs" />
     <Page Include="MainWindow.xaml">

@@ -2,5 +2,10 @@
 {
     public enum State
     {
+        HasNotStarted,
+        Run,
+        Pause,
+        Finished,
+        HasToBeReset,
     }
 }

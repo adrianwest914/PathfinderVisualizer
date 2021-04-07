@@ -2,7 +2,7 @@
 
 namespace PathfinderVisualizer.WPF.AStarVisualizer
 {
-    static class StatupValues
+    static class StartupValues
     {
         //Grid Dimensions
         public static readonly int NumGridRows = 40;
