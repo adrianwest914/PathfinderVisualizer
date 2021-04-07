@@ -36,16 +36,6 @@
                 HorizontalAlignment="Center"
                 Orientation="Horizontal">
                 
-                <!-- Algorithm Selector -->
-                <!-- Bug happens that the combobox goes off screen.
-                You will just have to run it to see what im talking about-->
-                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <ComboBox Width="105" Margin="10" x:Name="AlgorithmSelector">
-                        <!-- Will add future algos if the time permits-->
-                        <ComboBoxItem Content="AStar Algorithm"/>
-                    </ComboBox>
-                </StackPanel>
-                
                 <!-- NumGridColumn/NumGridRow selectors -->
                 <Grid>
                     <Grid.RowDefinitions>
