@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace PathfinderVisualizer.Library.DataStructures
 {
-    class MinPriorityQueue<T, K> where T : IComparable
+    public class MinPriorityQueue<T, K> where T : IComparable
     {
         MinHeap<T> minHeap;
         Dictionary<T, List<K>> dictionary;

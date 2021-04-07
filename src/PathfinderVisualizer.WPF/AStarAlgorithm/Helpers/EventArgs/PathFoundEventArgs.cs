@@ -5,5 +5,10 @@ namespace PathfinderVisualizer.WPF.AStarAlgorithm.AStarImplementation.AlgorithmT
 {
     public class PathFoundEventArgs : EventArgs
     {
+        public ArrayList Path { get; set; }
+        public PathFoundEventArgs(ArrayList path)
+        {
+            Path = path;
+        }
     }
 }

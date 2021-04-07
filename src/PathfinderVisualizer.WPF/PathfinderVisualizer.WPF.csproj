@@ -56,14 +56,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AStarAlgorithm\AlgorithmThreadController.cs" />
-    <Compile Include="AStarAlgorithm\AlgorithmThread\AlgorithmContoller.cs" />
+    <Compile Include="AStarAlgorithm\AlgorithmThread\AlgorithmController.cs" />
     <Compile Include="AStarAlgorithm\AlgorithmThread\AStarAlgorithm.cs" />
     <Compile Include="AStarAlgorithm\AStarValues.cs" />
     <Compile Include="AStarAlgorithm\Helpers\DataStructures\ClosedSet.cs" />
     <Compile Include="AStarAlgorithm\Helpers\DataStructures\OpenSet.cs" />
     <Compile Include="AStarAlgorithm\Helpers\Enums\State.cs" />
     <Compile Include="AStarAlgorithm\Helpers\Enums\Tile.cs" />
-    <Compile Include="AStarAlgorithm\Helpers\EventArgs\NodeAdedToCollectionEventArgs.cs" />
+    <Compile Include="AStarAlgorithm\Helpers\EventArgs\NodeAddedToCollectionEventArgs.cs" />
     <Compile Include="AStarAlgorithm\Helpers\EventArgs\PathFoundEventArgs.cs" />
     <Compile Include="AStarAlgorithm\Helpers\Objects\AStarTile.cs" />
     <Compile Include="AStarAlgorithm\Helpers\Objects\Node.cs" />
