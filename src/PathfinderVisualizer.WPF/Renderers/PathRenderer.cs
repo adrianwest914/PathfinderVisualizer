@@ -5,11 +5,11 @@ using System.Windows.Shapes;
 using System.Windows.Controls;
 using PathfinderVisualizer.WPF.AStarAlgorithm;
 using PathfinderVisualizer.WPF.Renderer.RenderHelpers;
-using PathfinderVisualizer.WPF.AStarAlgorithm.AStarImplementation.Algorithmthread;
+using PathfinderVisualizer.WPF.AStarAlgorithm.AStarImplementation.AlgorithmThread;
 
-namespace PathfinderVisualizer.WPF.Renderers
+namespace PathfinderVisualizer.WPF.Renderer
 {
-    public class PathRenderer
+    public class PathRenderer : IRenderer
     {
         Canvas canvas;
 

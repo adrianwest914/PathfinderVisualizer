@@ -10,7 +10,7 @@ namespace PathfinderVisualizer.WPF.AStarVisualizer
         public static int MaxDimension => Math.Max(NumGridRows, NumGridColumns);
 
         //Delay Properties
-        public static readonly uint Currentelay = 0;
+        public static readonly uint CurrentDelay = 0;
         public static readonly uint MinDelay = 0;
         public static readonly uint MaxDelay = 250;
 

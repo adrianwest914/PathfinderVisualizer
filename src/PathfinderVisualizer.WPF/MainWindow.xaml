@@ -99,7 +99,7 @@
                     <Button
                         x:Name="CmdSetStartTile"
                         Margin="5"
-                        Content="Set Start"/>
+                        Content="SetStart"/>
                     <Button
                         x:Name="CmdSetWallTile"
                         Margin="5"
@@ -109,7 +109,7 @@
                         Margin="5"
                         Content="Set Goal"/>
                     <Button
-                        x:Name="CmdClearTile"
+                        x:Name="CmdClearTiles"
                         Margin="5"
                         Content="Clear Tiles"/>
                 </StackPanel>

@@ -1,6 +1,6 @@
 ﻿namespace PathfinderVisualizer.WPF.UIElements
 {
-    public class ControlNames
+    static class ControlNames
     {
         public static string DrawingCanvas = "DrawingCanvas";
         public static string NumColumnsField = "TxtNumColumns";

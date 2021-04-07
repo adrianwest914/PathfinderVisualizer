@@ -23,6 +23,13 @@ namespace PathfinderVisualizer.WPF
         public MainWindow()
         {
             InitializeComponent();
+            InitializeAStarVisualization();
+        }
+
+        private void InitializeAStarVisualization()
+        {
+            var uiElements = new UIElements.UIControl(AlgorithmControls, DrawingCanvas);
+            var AStarVisualizer = new AStarVisualizer.AStarVisualizer(uiElements);
         }
     }
 }

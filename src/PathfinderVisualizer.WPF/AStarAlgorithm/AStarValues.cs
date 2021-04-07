@@ -83,7 +83,7 @@ namespace PathfinderVisualizer.WPF.AStarAlgorithm
 
         #region Delay Control
         private static readonly object lockDelayControlObject = new object();
-        private static uint _Delay = StartupValues.Currentelay;
+        private static uint _Delay = StartupValues.CurrentDelay;
         public static uint Delay
         {
             get { lock (lockDelayControlObject) return _Delay; }
