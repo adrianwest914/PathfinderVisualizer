@@ -21,8 +21,8 @@ namespace PathfinderVisualizer.Library.DataStructures
         }
         public void Add(T item)
         {
-            if (_Count == 0)
-                throw new Exception("The Heap does is not large enough");
+            if (_Count == _Capacity)
+                throw new Exception("The Heap is not large enough");
 
             Items[_Count] = item;
             _Count++;

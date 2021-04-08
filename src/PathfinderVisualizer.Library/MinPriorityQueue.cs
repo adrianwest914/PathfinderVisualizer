@@ -32,6 +32,8 @@ namespace PathfinderVisualizer.Library.DataStructures
                 dictionary[key].Add(value);
             else
                 dictionary.Add(key, new List<K> { value });
+
+            _Count++;
         }
         public bool Contains(T key)
         {
