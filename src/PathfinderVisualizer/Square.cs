@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace PathfinderVisualizer
 {
-    class Square : IComparable<Square>
+    public class Square : IComparable<Square>
     {
         public int x { get; set; }
         public int y { get; set; }

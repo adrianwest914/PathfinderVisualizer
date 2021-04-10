@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PathfinderVisualizer
 {
-    class Grid
+    public class Grid
     {
         public Square start;
         public Square goal;

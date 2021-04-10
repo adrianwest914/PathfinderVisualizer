@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PathfinderVisualizer
 {
-    class PriorityQueue<T>
+    public class PriorityQueue<T>
     {
         private Dictionary<T, int> data;
 
