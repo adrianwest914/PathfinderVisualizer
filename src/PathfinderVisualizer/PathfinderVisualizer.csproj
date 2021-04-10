@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Algorithms\AStar.cs" />
     <Compile Include="Algorithms\Dijikstra.cs" />
+    <Compile Include="Algorithms\GreedyBestFirstSearch.cs" />
     <Compile Include="Grid.cs" />
     <Compile Include="Square.cs" />
     <Page Include="MainWindow.xaml">
