@@ -85,6 +85,8 @@ namespace PathfinderVisualizer
                     int neighborX = square.x + i;
                     int neighborY = square.y + j;
 
+                    //Removes Diagonals
+                    //Button to enable and disable this?
                     if (neighborX != square.x && neighborY != square.y) //diagonals arent neighbors
                         continue;
 

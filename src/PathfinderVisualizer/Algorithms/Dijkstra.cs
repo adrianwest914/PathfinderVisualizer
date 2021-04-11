@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace PathfinderVisualizer.Algorithms
 {
-    public static class Dijikstra
+    public static class Dijkstra
     {
         public static async Task<List<Square>> GetPath(Grid grid)
         {

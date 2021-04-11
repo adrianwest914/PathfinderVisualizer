@@ -17,7 +17,7 @@ namespace PathfinderVisualizer
     public partial class MainWindow : Window
     {
         //bug where clicking clear path button after the board is clear 
-        //readds the weighted node after they were previously deleted
+        //re-adds the weighted node after they were previously deleted
         private bool m_choosingStart = true;
         private bool m_choosingGoal = false;
         private bool m_drawingWalls = false;
@@ -186,7 +186,7 @@ namespace PathfinderVisualizer
                         path = await AStar.GetPath(Grid.current);
                         break;
                     case 1:
-                        path = await Dijikstra.GetPath(Grid.current);
+                        path = await Dijkstra.GetPath(Grid.current);
                         break;
                     case 2:
                         path = await GreedyBestFirstSearch.GetPath(Grid.current);
@@ -240,6 +240,7 @@ namespace PathfinderVisualizer
                 Rectangle rect = (Rectangle)child;
                 Square current = Grid.current.grid[Grid.GetCoordinates(rect.Name).Item1, Grid.GetCoordinates(rect.Name).Item2];
 
+                //Issue where this re-adds weighted nodes
                 if (current != Grid.current.start && current != Grid.current.goal && !current.isWall && current.weight == 1)
                     current.ResetColor();
                 else if (current.weight > 1)

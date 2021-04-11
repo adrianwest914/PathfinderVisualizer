@@ -36,9 +36,9 @@
         <CheckBox Grid.Row="1" Grid.Column="4" x:Name="WallsCheckBox" Content="Draw Walls"
                   Checked="WallsCheckBoxChecked" Unchecked="WallsCheckBoxChecked" 
                   Margin="5,5,5,5" VerticalContentAlignment="Top" Style="{StaticResource CheckBoxMain}"/>
-        <CheckBox Grid.Row="1" Grid.Column="4" x:Name="WeightsCheckBox" Content="Draw Weights"
+        <CheckBox Grid.Row="1" Grid.Column="5" x:Name="WeightsCheckBox" Content="Draw Weights"
                   Checked="WeightsCheckBoxChecked" Unchecked="WeightsCheckBoxChecked" 
-                  Margin="107.8,5,0.2,5" VerticalContentAlignment="Top" Style="{StaticResource CheckBoxMain}" Grid.ColumnSpan="2"/>
+                  Margin="5,5,5,5" VerticalContentAlignment="Top" Style="{StaticResource CheckBoxMain}" Grid.ColumnSpan="2"/>
         <ComboBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="AlgorithmSelect" SelectedIndex="0"
                   Margin="5,5,5,5" Foreground="White" FontWeight="Bold" Style="{DynamicResource ComboBoxMain}"
                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
