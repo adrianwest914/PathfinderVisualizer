@@ -5,7 +5,7 @@ namespace PathfinderVisualizer
 {
     public class PriorityQueue<T>
     {
-        private Dictionary<T, int> data;
+        private readonly Dictionary<T, int> data;
 
         public PriorityQueue()
         {
@@ -22,7 +22,7 @@ namespace PathfinderVisualizer
             if (data.Count == 0)
                 throw new Exception("Queue is empty");
 
-            T bestItem = default(T);
+            T bestItem = default;
             int bestPriority = int.MaxValue;
 
             foreach (var item in data)

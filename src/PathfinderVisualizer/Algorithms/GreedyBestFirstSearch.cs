@@ -12,8 +12,11 @@ namespace PathfinderVisualizer.Algorithms
         {
             PriorityQueue<Square> ToCheck = new PriorityQueue<Square>();
             ToCheck.Enqueue(field.start, 0);
-            Dictionary<Square, Square> PreviousMoves = new Dictionary<Square, Square>();
-            PreviousMoves.Add(field.start, null);
+            Dictionary<Square, Square> PreviousMoves = new Dictionary<Square, Square>
+            {
+                //Adds previous moves
+                { field.start, null }
+            };
             Square current;
 
             while (ToCheck.Count() > 0)

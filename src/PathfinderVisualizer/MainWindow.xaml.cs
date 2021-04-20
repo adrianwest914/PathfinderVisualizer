@@ -12,12 +12,10 @@ using PathfinderVisualizer.Algorithms;
 namespace PathfinderVisualizer
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Issue in ClearPathBtnClick method
     /// </summary>
     public partial class MainWindow : Window
     {
-        //bug where clicking clear path button after the board is clear 
-        //re-adds the weighted node after they were previously deleted
         private bool m_choosingStart = true;
         private bool m_choosingGoal = false;
         private bool m_drawingWalls = false;
@@ -240,7 +238,7 @@ namespace PathfinderVisualizer
                 Rectangle rect = (Rectangle)child;
                 Square current = Grid.current.grid[Grid.GetCoordinates(rect.Name).Item1, Grid.GetCoordinates(rect.Name).Item2];
 
-                //Issue where this re-adds weighted nodes
+                //Issue where this re-adds weighted nodes after clearing the path
                 if (current != Grid.current.start && current != Grid.current.goal && !current.isWall && current.weight == 1)
                     current.ResetColor();
                 else if (current.weight > 1)

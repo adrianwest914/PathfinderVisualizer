@@ -6,8 +6,8 @@ namespace PathfinderVisualizer
 {
     public class Square : IComparable<Square>
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
         public int weight = 1;
         public bool isWall = false;
         public List<Square> neighbors = new List<Square>();
@@ -20,8 +20,8 @@ namespace PathfinderVisualizer
         public Square(Rectangle uiRef, int x, int y)
         {
             this.uiRef = uiRef;
-            this.x = x;
-            this.y = y;
+            this.X = x;
+            this.Y = y;
         }
         public int CompareTo(Square other)
         {
@@ -68,7 +68,7 @@ namespace PathfinderVisualizer
         }
         public override string ToString()
         {
-            return "Square: (" + x + ", " + y + ")";
+            return "Square: (" + X + ", " + Y + ")";
         }
     }
 }

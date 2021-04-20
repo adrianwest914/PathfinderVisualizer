@@ -16,7 +16,7 @@ namespace PathfinderVisualizer
         }
         public void AddSquare(Square square)
         {
-            grid[square.x, square.y] = square;
+            grid[square.X, square.Y] = square;
         }
         public void SetStart(int x, int y)
         {
@@ -70,7 +70,7 @@ namespace PathfinderVisualizer
         }
         public static int MeasureDistance(Square a, Square b)
         {
-            return Math.Abs(a.x - b.x) + Math.Abs(a.y - b.y);
+            return Math.Abs(a.X - b.X) + Math.Abs(a.Y - b.Y);
         }
 
         private List<Square> FindNeighbors(Square square)
@@ -82,12 +82,12 @@ namespace PathfinderVisualizer
                     if (i == 0 && j == 0) //self node
                         continue;
 
-                    int neighborX = square.x + i;
-                    int neighborY = square.y + j;
+                    int neighborX = square.X + i;
+                    int neighborY = square.Y + j;
 
                     //Removes Diagonals
                     //Button to enable and disable this?
-                    if (neighborX != square.x && neighborY != square.y) //diagonals arent neighbors
+                    if (neighborX != square.X && neighborY != square.Y) //diagonals arent neighbors
                         continue;
 
                     if ((neighborX >= 0 && neighborX < grid.GetLength(0)) && neighborY >= 0 && neighborY < grid.GetLength(1))
