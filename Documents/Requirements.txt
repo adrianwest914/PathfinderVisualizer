@@ -7,34 +7,42 @@ Purpose
 This projects allows for people to see how pathfinding algorithms work
 
 Requirements
-1. Algorithm Controller
+1. AStar Algorithm
 Type: functional
-Summary: Controls the how the algorithm works
+Summary: Controls the how the AStar Algorithm works
 
-2. Observers
+2. Dijikstra Algorithm
 Type: functional
-Summary: Observes the states of objects and changes them as needed
+Summary: Controls the how the Dijikstra Algorithm works
 
-3. Tile Renderers
+3. BreadthFirstSearch Algorithm
 Type: functional
-Summary: Renders different kinds of tiles to be placed or deleted
+Summary: Controls the how the BreadthFirstSearch Algorithm works
 
-4. UI Controls
+4. GreedyBestFirstSearch Algorithm
 Type: functional
-Summary: Helps control different sections of the UI
+Summary: Controls the how the AStar Algorithm works
 
-5. Startup Values
+5. AddSquare
 Type: functional
-Summary: Contains the default values the program starts with
+Summary: Add squares to the grid
 
-6. Controllers
+6. SetWall, Weight, Start
 Type: functional
-Summary: Controls different portions of the application
+Summary: Sets the wall, weight, and start nodes
 
-7. Resolution
+7. Color items
+Type: functional
+Summary: Colors the different kinds of squares
+
+8. Priority Queue
+Type: non-functional
+Summary: Puts every square into a priority queue to be accessed later
+
+9. Resolution
 Type: constraint
 Summary: Work on any size monitor
 
-8. OS
+10. OS
 Type: constraint
 Summary: Must work on the windows OS
